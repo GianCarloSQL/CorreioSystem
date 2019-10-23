@@ -17,9 +17,9 @@ function enviar() {
     //pacote.sCdMaoPropria = $('input[id="sCdMaoPropria"]').val();
 
 
-    //var temp;
-    //temp = $('input[id="sCdMaoPropria"]').selectedIndex;
-    //teste(temp);
+    var temp;
+    temp = $('select[id="sCdMaoPropria"]').selectedIndex.text;
+    teste(temp);
 
 
     //pacote.sCdAvisoRecebimento = $('input[id="sCdAvisoRecebimento"]').val();
