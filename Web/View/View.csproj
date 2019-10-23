@@ -77,6 +77,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Css\Style.css" />
     <Content Include="esqueletosite.html" />
+    <Content Include="Images\sedex.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
