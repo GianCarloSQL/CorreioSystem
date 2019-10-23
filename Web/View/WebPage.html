@@ -5,32 +5,72 @@
     <title></title>
 </head>
 <body>
-
     <div class="content">
-        <!--FORMULÁRIO DE LOGIN-->
         <div id="login">
             <form method="post" action="">
-                <h1>Sistema de Correios</h1>
+                <h1>Delivery</h1>
                 <p>
                     <label for="dataSolicitacao">Data da Solicitação</label>
-                    <input id="DataSolicitacao" name="nome_login" required="required" type="datetime" placeholder="28/04/1997" />
+                    <input id="DataSolicitacao" name="nome_login" required="required" type="text" placeholder="28/04/1997" />
                 </p>
 
                 <p>
-                    <label for="cepOrigem"> Cep de Origem </label>
-                    <input id="CepOrigem" name="email_login" required="required" type="number" placeholder="891200000" />
+                    <label for="sCepOrigem"> Cep de Origem </label>
+                    <input id="sCepOrigem" name="email_login" required="required" type="number" placeholder="891200000" />
                 </p>
                 <p>
                     <label for="cepDestino"> Cep de Destino </label>
-                    <input id="CepDestino" name="email_login" required="required" type="number" placeholder="891200000" />
+                    <input id="sCepDestino" name="email_login" required="required" type="number" placeholder="891200000" />
                 </p>
                 <p>
                     <label for="Peso"> Peso </label>
-                    <input id="Peso" name="peso" required="required" type="number" placeholder="10.5" />
+                    <input id="nVlPeso" name="peso" required="required" type="number" placeholder="10.5" />
                 </p>
 
                 <p>
-                    <input type="submit" value="Calcular Valor" />
+                    <label for="Comprimento"> Comprimento </label>
+                    <input id="nVlComprimento" name="peso" required="required" type="number" placeholder="10.5" />
+                </p>
+
+                <p>
+                    <label for="nVlAltura"> Altura </label>
+                    <input id="nVlAltura" name="peso" required="required" type="number" placeholder="10.5" />
+                </p>
+
+
+                <p>
+                    <label for="nVlLargura"> Largura </label>
+                    <input id="nVlLargura" name="peso" required="required" type="number" placeholder="10.5" />
+                </p>
+
+                <p>
+                    <label for="sCdMaoPropria"> Mão Propria </label>
+                    <select name="sCdMaoPropria" id="sCdMaoPropria">
+                        <option value="1"> Sim </option>
+                        <option value="2"> Não </option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="nVlValorDeclarado"> Valor Declarado </label>
+                    <input id="nVlValorDeclarado" name="peso" required="required" type="number" placeholder="10.5" />
+                </p>
+
+                <p>
+                    <label for="sCdAvisoRecebimento"> Aviso Recebimento </label>
+                    <select name="sCdAvisoRecebimento" id="sCdAvisoRecebimento">
+                        <option value="1"> Sim </option>
+                        <option value="2"> Não </option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="nCdServico"> Cód Serviço </label>
+                    <input id="nCdServico" name="peso" required="required" type="number" placeholder="1" />
+                </p>
+
+                <p>
+                    <input type="submit" id="enviar" value="Calcular Valor" />
                 </p>
 
 
