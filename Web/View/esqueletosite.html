@@ -6,20 +6,16 @@
 </head>
 <body>
     <ul style="list-style-type:none; padding:0px">
-        <li><input type="text" id="nCdEmpresa" /></li>
-        <li><input type="text" id="sDsSenha" /></li>
-        <li><input type="text" id="sCepOrigem" /></li>
-        <li><input type="text" id="sCepDestino" /></li>
-        <li><input type="text" id="nVlPeso" /></li>
-        <li><input type="text" id="nCdFormato" /></li>
-        <li><input type="text" id="nVlComprimento" /></li>
-        <li><input type="text" id="nVlAltura" /></li>
-        <li><input type="text" id="nVlLargura" /></li>
-        <li><input type="text" id="sCdMaoPropria" /></li>
-        <li><input type="text" id="nVlValorDeclarado" /></li>
-        <li><input type="text" id="sCdAvisoRecebimento" /></li>
-        <li><input type="text" id="nCdServico" /></li>
-        <li><input type="text" id="nVlDiametro" /></li>
+        <li><input type="text" placeholder="Cep Origem" id="sCepOrigem" /></li>
+        <li><input type="text" placeholder="Cep Destino" id="sCepDestino" /></li>
+        <li><input type="text" placeholder="Peso" id="nVlPeso" /></li>
+        <li><input type="text" placeholder="Comprimento" id="nVlComprimento" /></li>
+        <li><input type="text" placeholder="Altura" id="nVlAltura" /></li>
+        <li><input type="text" placeholder="Largura" id="nVlLargura" /></li>
+        <li><input type="text" placeholder="Mão Própria" id="sCdMaoPropria" /></li>
+        <li><input type="text" placeholder="Valor Declarado" id="nVlValorDeclarado" /></li>
+        <li><input type="text" placeholder="Aviso Recebimento" id="sCdAvisoRecebimento" /></li>
+        <li><input type="text" placeholder="Código de Serviço" id="nCdServico" /></li>
         <li><input type="button" id="enviar" value="Enviar" onclick="enviar()" /></li>
     </ul>
     <ul style="list-style-type:none; padding:0px">
@@ -36,6 +32,7 @@
         <li><span>Erro: </span><span id="Erro"></span></li>
         <li><span>Mensagem de Erro: </span><span id="MsgErro"></span></li>
     </ul>
-    <script src="util/scripts.js"></script>
+    <script src="Util/scripts.js"></script>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
 </body>
 </html>
