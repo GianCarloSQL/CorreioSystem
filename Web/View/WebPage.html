@@ -14,7 +14,7 @@
                 <h1>Delivery</h1>
                 <p>
                     <label for="dataSolicitacao">Data da Solicitação</label>
-                    <input id="DataSolicitacao" name="nome_login" required="required" type="text" placeholder="28/04/1997" />
+                    <input id="DataSolicitacao" name="nome_login" type="text" placeholder="28/04/1997" />
                 </p>
 
                 <p>
@@ -49,21 +49,21 @@
                 <p>
                     <label for="sCdMaoPropria"> Mão Propria </label>
                     <select name="sCdMaoPropria" id="sCdMaoPropria" style="font-family: 'sans-serif'; font-size: 17px ; background-color: #d1d1d1">
-                        <option value="S"> Sim </option>
-                        <option value="N"> Não </option>
+                        <option value="s"> Sim </option>
+                        <option value="n"> Não </option>
                     </select>
                 </p>
 
                 <p>
                     <label for="nVlValorDeclarado"> Valor Declarado </label>
-                    <input id="nVlValorDeclarado" name="peso" required="required" type="number" placeholder="0.0" />
+                    <input id="nVlValorDeclarado" name="peso" type="number" placeholder="0.0" />
                 </p>
 
                 <p>
                     <label for="sCdAvisoRecebimento"> Aviso Recebimento </label>
                     <select name="sCdAvisoRecebimento" id="sCdAvisoRecebimento" style="font-family: 'sans-serif'; font-size: 17px ; background-color: #d1d1d1">
-                        <option value="S"> Sim </option>
-                        <option value="N"> Não </option>
+                        <option value="s"> Sim </option>
+                        <option value="n"> Não </option>
                     </select>
                 </p>
 
@@ -81,10 +81,13 @@
                 </p>
 
                 <p>
-                    <input type="submit" value="Calcular Valor" data-toggle="modal" data-target="#exampleModal" onclick="enviar()"/>
+                    <input type="submit" value="Calcular Valor" data-toggle="modal" data-target="#exampleModal" onclick="enviar()" />
                 </p>
+                <!--NÃO CONSEGUI FAZER O TEU BOTAO FUNCIONAR, ENTAO FIZ UM ALI EM BAIXO KKKK-->
+                <input type="button" onclick="enviar()" />
 
             </form>
+
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -109,6 +112,21 @@
                     </div>
                 </div>
             </div>
+            <!--NÃO CONSEGUI FAZER O TEU MODAL FUNCIONAR ENTAO COPIEI O OUTPUT DO ESQUELETO-->
+            <ul style="list-style-type:none; padding:0px">
+                <li><span>Codigo: </span><span id="Codigo"></span></li>
+                <li><span>Valor: </span><span id="Valor"></span></li>
+                <li><span>Prazo de Entrega: </span><span id="PrazoEntrega"></span></li>
+                <li><span>Valor Sem Adicionais: </span><span id="ValorSemAdicionais"></span></li>
+                <li><span>Valor Mão Propria: </span><span id="ValorMaoPropria"></span></li>
+                <li><span>Valor Aviso Recebimento: </span><span id="ValorAvisoRecebimento"></span></li>
+                <li><span>Valor Valor Declarado: </span><span id="ValorValorDeclarado"></span></li>
+                <li><span>Entrega Domiciliar: </span><span id="EntregaDomiciliar"></span></li>
+                <li><span>Entrega Sabado: </span><span id="EntregaSabado"></span></li>
+                <li><span>Observações Fim: </span><span id="obsFim"></span></li>
+                <li><span>Erro: </span><span id="Erro"></span></li>
+                <li><span>Mensagem de Erro: </span><span id="MsgErro"></span></li>
+            </ul>
         </div>
     </div>
 
