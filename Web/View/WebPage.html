@@ -1,8 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
+   
 </head>
 <body>
     <div class="content">
@@ -53,7 +56,7 @@
 
                 <p>
                     <label for="nVlValorDeclarado"> Valor Declarado </label>
-                    <input id="nVlValorDeclarado" name="peso" type="number" placeholder="0.0" />
+                    <input id="nVlValorDeclarado" name="peso" required="required" type="number" placeholder="0.0" />
                 </p>
 
                 <p>
@@ -78,15 +81,48 @@
                 </p>
 
                 <p>
-                    <input type="submit" value="Calcular Valor" onclick="enviar()" />
+                    <input type="submit" id="enviar" value="Calcular Valor" data-toggle="modal" data-target="#exampleModal" />
                 </p>
 
-
             </form>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Dados da Entrega</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="modal-body">
+                            <div>Prazo: <span name="prazo"></span></div>
+                            <div>Valor: <span name="valor"></span></div>
+                            <div>Cidade: <span name="cidade"></span></div>
+                            <div>Bairro: <span name="bairro"></span></div>
+                            <div>Logradouro: <span name="logradouro"></span></div>
+                            <div>Entregar Pessoalmente : <span name="entregaPessoalmente"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+
     <link href="Css/Style.css" rel="stylesheet" />
-    <script src="Util/scripts.js"></script>
-    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="util/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </body>
 </html>
